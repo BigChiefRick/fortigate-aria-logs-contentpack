@@ -1,0 +1,488 @@
+{
+  "name":"FortiGate",
+  "namespace":"com.usmr.fg",
+  "contentPackId":"com.usmr.fg",
+  "framework":"#9c4",
+  "version":"1.6",
+  "extractedFields":[ {
+    "displayName":"fg_action",
+    "preContext":" action=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3bmn2gs33o",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Traffic action: allow, deny, client-rst, server-rst"
+  }, {
+    "displayName":"fg_app",
+    "preContext":" app=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3bobya0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Detected application"
+  }, {
+    "displayName":"fg_appcat",
+    "preContext":"appcat=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3bobyggylu",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Application category"
+  }, {
+    "displayName":"fg_applist",
+    "preContext":"applist=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3bobygy2ltoq000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"App control profile"
+  }, {
+    "displayName":"fg_apprisk",
+    "preContext":"apprisk=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3bobyhe2ltnm000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"App risk level"
+  }, {
+    "displayName":"fg_authserver",
+    "preContext":"authserver=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3bov2gq43foj3gk4q0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Auth server used"
+  }, {
+    "displayName":"fg_devid",
+    "preContext":"devid=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3emv3gsza0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"FortiGate device serial number"
+  }, {
+    "displayName":"fg_devname",
+    "preContext":"devname=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3emv3g4ylnmu000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"FortiGate device name"
+  }, {
+    "displayName":"fg_devtype",
+    "preContext":" devtype=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3emv3hi6lqmu000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Endpoint device type"
+  }, {
+    "displayName":"fg_direction",
+    "preContext":"direction=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3enfzgky3unfxw4000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Traffic direction"
+  }, {
+    "displayName":"fg_dstcountry",
+    "preContext":"dstcountry=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3eon2gg33vnz2he6i0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Destination IP country"
+  }, {
+    "displayName":"fg_dstintf",
+    "preContext":"dstintf=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3eon2gs3tumy000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Destination interface"
+  }, {
+    "displayName":"fg_dstintfrole",
+    "preContext":"dstintfrole=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3eon2gs3tumzzg63df",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Destination interface role"
+  }, {
+    "displayName":"fg_dstip",
+    "preContext":"dstip=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3eon2gs4a0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Destination IP address"
+  }, {
+    "displayName":"fg_dstport",
+    "preContext":"dstport=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3eon2ha33soq000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Destination port"
+  }, {
+    "displayName":"fg_duration",
+    "preContext":" duration=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3eovzgc5djn5xa0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Session duration in seconds"
+  }, {
+    "displayName":"fg_eventtype",
+    "preContext":"eventtype=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3fozsw45dupfygk000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"UTM event type"
+  }, {
+    "displayName":"fg_fctuid",
+    "preContext":"fctuid=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3gmn2hk2le",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"FortiClient endpoint UID"
+  }, {
+    "displayName":"fg_logid",
+    "preContext":"logid=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3mn5twsza0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"FortiGate log ID"
+  }, {
+    "displayName":"fg_msg",
+    "preContext":"msg=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3nontq0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Log message text"
+  }, {
+    "displayName":"fg_osname",
+    "preContext":"osname=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3ponxgc3lf",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Endpoint OS name"
+  }, {
+    "displayName":"fg_policyid",
+    "preContext":"policyid=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3qn5wgsy3znfsa0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Firewall policy ID"
+  }, {
+    "displayName":"fg_policyname",
+    "preContext":"policyname=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3qn5wgsy3znzqw2zi0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Firewall policy name"
+  }, {
+    "displayName":"fg_proto",
+    "preContext":" proto=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3qojxxi3y0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"IP protocol number"
+  }, {
+    "displayName":"fg_rcvdbyte",
+    "preContext":"rcvdbyte=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3smn3giytzorsq0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Bytes received"
+  }, {
+    "displayName":"fg_sentbyte",
+    "preContext":"sentbyte=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tmvxhiytzorsq0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Bytes sent"
+  }, {
+    "displayName":"fg_service",
+    "preContext":" service=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tmvzhm2ldmu000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Matched service object"
+  }, {
+    "displayName":"fg_sni",
+    "preContext":" hostname=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tnzuq0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"SNI hostname from TLS"
+  }, {
+    "displayName":"fg_srccountry",
+    "preContext":"srccountry=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrwg33vnz2he6i0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source IP country"
+  }, {
+    "displayName":"fg_srcdomain",
+    "preContext":"srcdomain=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrwi33nmfuw4000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source Windows domain"
+  }, {
+    "displayName":"fg_srcintf",
+    "preContext":"srcintf=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrws3tumy000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source interface"
+  }, {
+    "displayName":"fg_srcintfrole",
+    "preContext":"srcintfrole=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrws3tumzzg63df",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source interface role: wan, lan, dmz"
+  }, {
+    "displayName":"fg_srcip",
+    "preContext":"srcip=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrws4a0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source IP address"
+  }, {
+    "displayName":"fg_srcmac",
+    "preContext":"srcmac=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrw2yld",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source MAC address"
+  }, {
+    "displayName":"fg_srcname",
+    "preContext":"srcname=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrw4ylnmu000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source endpoint hostname"
+  }, {
+    "displayName":"fg_srcport",
+    "preContext":"srcport=",
+    "postContext":" ",
+    "regexValue":"\\d+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrxa33soq000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Source port"
+  }, {
+    "displayName":"fg_srcremote",
+    "preContext":"srcremote=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tojrxezlnn52gk000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"FortiClient public source IP"
+  }, {
+    "displayName":"fg_subtype",
+    "preContext":"subtype=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3tovrhi6lqmu000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Log subtype: forward, app-ctrl, vpn"
+  }, {
+    "displayName":"fg_tranip",
+    "preContext":"tranip=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3uojqw42lq",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"DNAT translated IP"
+  }, {
+    "displayName":"fg_transip",
+    "preContext":"transip=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3uojqw443joa000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"SNAT egress IP"
+  }, {
+    "displayName":"fg_type",
+    "preContext":" type=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3upfygk000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Log type: traffic, utm, event"
+  }, {
+    "displayName":"fg_unauthuser",
+    "preContext":"unauthuser=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3vnzqxk5diovzwk4q0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"FortiClient identified user"
+  }, {
+    "displayName":"fg_unauthusersrc",
+    "preContext":"unauthusersource=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3vnzqxk5diovzwk4ttojrq0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"User identity source"
+  }, {
+    "displayName":"fg_user",
+    "preContext":" user=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3vonsxe000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"Authenticated AD user"
+  }, {
+    "displayName":"fg_utmaction",
+    "preContext":"utmaction=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3vorwwcy3unfxw4000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"UTM overall action"
+  }, {
+    "displayName":"fg_vwlname",
+    "preContext":"vwlname=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3wo5wg4ylnmu000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"SD-WAN rule name"
+  }, {
+    "displayName":"fg_vwlquality",
+    "preContext":"vwlquality=\"",
+    "postContext":"\"",
+    "regexValue":"[^\"]+",
+    "internalName":"ibadcmk7mnxw2ltvonwxeltgm5tgox3wo5whc5lbnruxi6i0",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"operator\":\"CONTAINS\",\"value\":\"v4_2187792b\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"\"}",
+    "info":"SD-WAN path quality"
+  } ],
+  "queries":[ ],
+  "alerts":[ {
+    "name":"FortiGate: EMS Client-RST Spike",
+    "info":"<span>Spike in FortiClient EMS connection resets.</span>",
+    "recommendation":"Check EMS cert validity, DNAT policy at DF site, and egress IP connectivity.",
+    "alertType":"RATE_BASED",
+    "chartQuery":"{\"query\":\"service=\\\"svc_forticlient\\\" action=\\\"client-rst\\\"\",\"startTimeMillis\":1430452800000,\"endTimeMillis\":1431662400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":"",
+    "hitCount":50.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"FortiGate: Denied Traffic Spike",
+    "info":"<span>Abnormal spike in denied traffic.</span>",
+    "recommendation":"Review fg_srcip and fg_policyid to identify source and denying policy.",
+    "alertType":"RATE_BASED",
+    "chartQuery":"{\"query\":\"subtype=\\\"forward\\\" action=\\\"deny\\\"\",\"startTimeMillis\":1430452800000,\"endTimeMillis\":1431662400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":"",
+    "hitCount":100.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"FortiGate: Elevated Risk App Detected",
+    "info":"<span>Elevated-risk application detected.</span>",
+    "recommendation":"Verify if app and user are expected. Block if unauthorized.",
+    "alertType":"RATE_BASED",
+    "chartQuery":"{\"query\":\"apprisk=\\\"elevated\\\"\",\"startTimeMillis\":1430452800000,\"endTimeMillis\":1431662400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":"",
+    "hitCount":1.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"FortiGate: High EMS Inbound Rate",
+    "info":"<span>High inbound rate to EMS from WAN.</span>",
+    "recommendation":"Review fg_srcip and fg_srccountry for unexpected sources.",
+    "alertType":"RATE_BASED",
+    "chartQuery":"{\"query\":\"policyname=\\\"FortiClient EMS Inbound\\\" srcintfrole=\\\"wan\\\"\",\"startTimeMillis\":1430452800000,\"endTimeMillis\":1431662400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":"",
+    "hitCount":200.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":600000,
+    "searchInterval":60000
+  } ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Traffic Volume (All)",
+          "chartType":"TIME_SERIES",
+          "chartOptions":"",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"type=traffic\",\"startTimeMillis\":-9223372036854775808,\"endTimeMillis\":9223372036854775807,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Denied Traffic",
+          "chartType":"TIME_SERIES",
+          "chartOptions":"",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"type=traffic action=deny\",\"startTimeMillis\":-9223372036854775808,\"endTimeMillis\":9223372036854775807,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Web Filter Events",
+          "chartType":"TIME_SERIES",
+          "chartOptions":"",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"type=utm subtype=webfilter\",\"startTimeMillis\":-9223372036854775808,\"endTimeMillis\":9223372036854775807,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Virus Events",
+          "chartType":"TIME_SERIES",
+          "chartOptions":"",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"type=utm subtype=virus\",\"startTimeMillis\":-9223372036854775808,\"endTimeMillis\":9223372036854775807,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Application Control Events",
+          "chartType":"TIME_SERIES",
+          "chartOptions":"",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"type=utm subtype=app-ctrl\",\"startTimeMillis\":-9223372036854775808,\"endTimeMillis\":9223372036854775807,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      } ],
+      "itemUuid":"3b878279-a04d-347d-a093-2cb294d96259"
+    } ],
+    "header":""
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"BigChiefRick",
+  "url":"https://github.com/BigChiefRick",
+  "contentVersion":"1.6",
+  "info":"<span>FortiGate firewall log analytics for USMR multi-site infrastructure.</span>",
+  "instructions":"<span>Logs identified by event_type=v4_2187792b forwarded via FortiAnalyzer syslog.</span>",
+  "icon":"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"
+}
